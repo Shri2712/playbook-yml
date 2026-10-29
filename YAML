@@ -1,0 +1,10 @@
+---
+- name: Configure localhost using Ansible
+  hosts: local
+  connection: local
+
+  tasks:
+    - name: Create a demonstration file
+      copy:
+        content: "Ansible provisioning successful!"
+        dest: /tmp/ansible-demo.txt
